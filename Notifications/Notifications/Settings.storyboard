@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14269.12" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14252.5"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="eAB-R9-Ixo">
+            <objects>
+                <viewController storyboardIdentifier="Settings" id="uds-PV-cPo" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="QfD-NN-vsF">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Уведомления об акциях" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="POp-Rq-RWk">
+                                <rect key="frame" x="16" y="81" width="191.5" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Уведомления о скидках" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FCo-8f-YPg">
+                                <rect key="frame" x="16" y="134" width="191" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Новости" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="85N-4L-vi2">
+                                <rect key="frame" x="16" y="187" width="68" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="oSW-ey-lQt" userLabel="1 Switch">
+                                <rect key="frame" x="310" y="76" width="51" height="31"/>
+                            </switch>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ori-Q5-Vh0" userLabel="2 Switch">
+                                <rect key="frame" x="310" y="129" width="51" height="31"/>
+                            </switch>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Настройка уведомлений" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="r7m-ap-QZ2">
+                                <rect key="frame" x="88" y="28" width="199" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="wml-Lb-bGD" userLabel="3 Switch">
+                                <rect key="frame" x="310" y="182" width="51" height="31"/>
+                            </switch>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="FCo-8f-YPg" firstAttribute="top" secondItem="POp-Rq-RWk" secondAttribute="bottom" constant="32" id="6G5-yG-9OT"/>
+                            <constraint firstItem="oSW-ey-lQt" firstAttribute="centerY" secondItem="POp-Rq-RWk" secondAttribute="centerY" id="9hi-fS-0Kt"/>
+                            <constraint firstItem="ZGj-Jf-F3v" firstAttribute="trailing" secondItem="wml-Lb-bGD" secondAttribute="trailing" constant="16" id="Cgn-IR-2nH"/>
+                            <constraint firstItem="POp-Rq-RWk" firstAttribute="top" secondItem="r7m-ap-QZ2" secondAttribute="bottom" constant="32" id="D0N-TO-DHa"/>
+                            <constraint firstItem="ZGj-Jf-F3v" firstAttribute="trailing" secondItem="Ori-Q5-Vh0" secondAttribute="trailing" constant="16" id="FFC-Rr-3ap"/>
+                            <constraint firstItem="wml-Lb-bGD" firstAttribute="centerY" secondItem="85N-4L-vi2" secondAttribute="centerY" id="Hct-HA-ygd"/>
+                            <constraint firstItem="FCo-8f-YPg" firstAttribute="leading" secondItem="ZGj-Jf-F3v" secondAttribute="leading" constant="16" id="QiZ-Xy-TGl"/>
+                            <constraint firstItem="85N-4L-vi2" firstAttribute="leading" secondItem="ZGj-Jf-F3v" secondAttribute="leading" constant="16" id="dra-Sy-YbA"/>
+                            <constraint firstItem="85N-4L-vi2" firstAttribute="top" secondItem="FCo-8f-YPg" secondAttribute="bottom" constant="32" id="hdd-Ss-vo2"/>
+                            <constraint firstItem="Ori-Q5-Vh0" firstAttribute="centerY" secondItem="FCo-8f-YPg" secondAttribute="centerY" id="nUc-0D-Xol"/>
+                            <constraint firstItem="r7m-ap-QZ2" firstAttribute="top" secondItem="ZGj-Jf-F3v" secondAttribute="top" constant="8" id="nZA-Sl-t52"/>
+                            <constraint firstItem="r7m-ap-QZ2" firstAttribute="centerX" secondItem="QfD-NN-vsF" secondAttribute="centerX" id="ozu-Qd-9XE"/>
+                            <constraint firstItem="POp-Rq-RWk" firstAttribute="leading" secondItem="ZGj-Jf-F3v" secondAttribute="leading" constant="16" id="rwN-WQ-JRF"/>
+                            <constraint firstItem="ZGj-Jf-F3v" firstAttribute="trailing" secondItem="oSW-ey-lQt" secondAttribute="trailing" constant="16" id="t2V-Vw-pQw"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="ZGj-Jf-F3v"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jbk-MI-0zH" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="213.59999999999999" y="79.610194902548727"/>
+        </scene>
+    </scenes>
+</document>
